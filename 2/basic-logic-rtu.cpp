@@ -4,13 +4,13 @@ using namespace std;
 
 void process_questions() {
     string hobijs, vards, uzvards;
-    cout<<"Sveiki, ievadiet hobiju\n";
+    cout<<"Sveiki, ievadiet hobiju:\n";
     cin>>hobijs;
-    cout<<"Ievadiet vārdu\n";
+    cout<<"Ievadiet vārdu:\n";
     cin>>vards;
-    cout<<"Ievadiet uzvārdu\n";
+    cout<<"Ievadiet uzvārdu:\n";
     cin>>uzvards;
-    cout<<"Sveiks(a), "<<vards<<" "<<uzvards<<". Jūsu hobijs ir "<<hobijs<<".\n\n";
+    cout<<"\nSveiks(a), "<<vards<<" "<<uzvards<<". Jūsu hobijs ir "<<hobijs<<".\n\n";
 }
 
 int main()
