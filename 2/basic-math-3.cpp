@@ -6,9 +6,8 @@ using namespace std;
 int main()
 {
     //Y=(a+b)/(a-b)
-    float a,b;
-    float Y;
-    cout<<"Ievadiet divus skaitļus:\n";
+    float Y,a,b;
+    cout<<"Ievadiet divus skaitļus, kuri nav vienādi:\n";
     cout<<"a: ";
     cin>>a;
     cout<<"b: ";
