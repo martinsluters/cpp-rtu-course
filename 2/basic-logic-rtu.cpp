@@ -10,7 +10,7 @@ void process_questions() {
     cin>>vards;
     cout<<"Ievadiet uzvārdu\n";
     cin>>uzvards;
-    cout<<"Sveiks(a), "<<vards<<" "<<uzvards<<". Jūsu hobijs ir "<<hobijs<<"\n\n";
+    cout<<"Sveiks(a), "<<vards<<" "<<uzvards<<". Jūsu hobijs ir "<<hobijs<<".\n\n";
 }
 
 int main()
