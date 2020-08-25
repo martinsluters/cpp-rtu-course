@@ -8,18 +8,17 @@ using namespace std;
 
 void process_sqrt() {
     float x;
-    cout<<"Ievadiet jebkuru skaitli no kura aprēķināt kvadrātskani: ";
-    cin>>x;
+    cout << "Ievadiet jebkuru skaitli no kura aprēķināt kvadrātskani: ";
+    cin >> x;
     while ( 0 == x ) {
-        cout<<"Kavdrātsakne no 0 nev iespējams aprēķināt, ievadiet skaitli vēlreiz: \n";
-        cin>>x;
+        cout << "Kavdrātsakne no 0 nev iespējams aprēķināt, ievadiet skaitli vēlreiz: " << endl;
+        cin >> x;
     }
-    cout<<sqrt( x )<<"\n\n";
+    cout << "Kvadrātsakne no " << x << " ir " << sqrt( x ) << endl << endl;
 }
 
-int main()
-{
-    string continue_process= "ja";
+int main() {
+    string continue_process = "ja";
     bool first_attempt = true;
     while (
         "ja" == continue_process
@@ -28,7 +27,7 @@ int main()
             process_sqrt();
             first_attempt = false;
         } else {
-            cout<<"Turpināt programmu (ja/ne)?\n";
+            cout << "Turpināt programmu (ja/ne)?" << endl;
             cin>>continue_process;
             if ( "ja" == continue_process ) {
                 process_sqrt();
