@@ -6,22 +6,42 @@
 
 using namespace std;
 
+int get_current_day() {
+    time_t t = time(NULL);
+    tm* tPtr = localtime(&t);
+    return tPtr->tm_mday;
+}
+
+int get_current_month() {
+    time_t t = time(NULL);
+    tm* tPtr = localtime(&t);
+    return (tPtr->tm_mon) + 1;
+}
+
 int get_current_year() {
     time_t t = time(NULL);
     tm* tPtr = localtime(&t);
     return (tPtr->tm_year) + 1900;
 }
 
-bool is_eighteen_plus( int dob ) {
-    if ( 18 <= get_current_year() - dob ) {
+bool is_eighteen_plus( int yob, int mob, int dob ) {
+    if ( 18 < get_current_year() - yob ) {
         return true;
+    } else if ( 18 == get_current_year() - yob  ) {
+        if ( get_current_month() > mob ) {
+            return true;
+        } else if ( get_current_month() == mob ) {
+            if ( get_current_day() > dob || get_current_day() == dob ) {
+                return true;
+            }
+        }
     }
 
     return false;
 }
 
-string get_is_eighteen_label( int dob ) {
-    if ( is_eighteen_plus( dob ) ) {
+string get_is_eighteen_label( int yob, int mob, int dob ) {
+    if ( is_eighteen_plus( yob, mob, dob ) ) {
         return "pilngadīgs";
     }
 
@@ -30,12 +50,16 @@ string get_is_eighteen_label( int dob ) {
 
 void process_questions() {
     string name;
-    int dob;
+    int yob, mob, dob;
     cout << "Ievadiet vārdu: ";
     cin >> name;
     cout << "Ievadiet dzimšanas gadu: ";
+    cin >> yob;
+    cout << "Ievadiet dzimšanas mēnesi (1-12): ";
+    cin >> mob;
+    cout << "Ievadiet dzimšanas mēneša dienu (1-31): ";
     cin >> dob;
-    cout << "Tavs vārds ir " << name << " un Tu esi " << get_is_eighteen_label( dob ) << "!" << endl;
+    cout << "Tavs vārds ir " << name << " un Tu esi " << get_is_eighteen_label( yob, mob, dob ) << "!" << endl << endl;
 }
 
 int main() {
