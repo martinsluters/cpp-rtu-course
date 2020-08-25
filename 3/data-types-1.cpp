@@ -28,7 +28,7 @@ int main() {
             first_attempt = false;
         } else {
             cout << "Turpināt programmu (ja/ne)?" << endl;
-            cin>>continue_process;
+            cin >> continue_process;
             if ( "ja" == continue_process ) {
                 process_sqrt();
             }
