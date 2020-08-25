@@ -33,7 +33,7 @@ void process_questions() {
     int dob;
     cout << "Ievadiet vārdu: ";
     cin >> name;
-    cout << "Ievadiet vecumu: ";
+    cout << "Ievadiet dzimsanas gadu: ";
     cin >> dob;
     cout << "Tavs vārds ir " << name << " un Tu esi " << get_is_eighteen_label( dob ) << "!" << endl;
 }
