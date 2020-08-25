@@ -1,5 +1,5 @@
 /**
- * Simple example of cmath lib usage
+ * Simple example of ctime lib usage
  */
 #include <iostream>
 #include <ctime>
