@@ -6,22 +6,22 @@
 
 using namespace std;
 
-int get_current_day() {
+struct tm* get_localtime() {
     time_t t = time(NULL);
     tm* tPtr = localtime(&t);
-    return tPtr->tm_mday;
+    return tPtr;
+}
+
+int get_current_day() {
+    return get_localtime()->tm_mday;
 }
 
 int get_current_month() {
-    time_t t = time(NULL);
-    tm* tPtr = localtime(&t);
-    return (tPtr->tm_mon) + 1;
+    return (get_localtime()->tm_mon) + 1;
 }
 
 int get_current_year() {
-    time_t t = time(NULL);
-    tm* tPtr = localtime(&t);
-    return (tPtr->tm_year) + 1900;
+    return (get_localtime()->tm_year) + 1900;
 }
 
 bool is_eighteen_plus( int yob, int mob, int dob ) {
