@@ -17,11 +17,9 @@ int main()
         cin>>b;
     }
     while ( 0 == a-b ) {
-        cout<<"Dalīt ar 0 nav iespējams vienādojumā Y=a/(a-b) ar mainīgajiem a="<<a<<" b="<<b<<". Ievadiet vēlreiz a un b\n";
+        cout<<"Dalīt ar 0 nav iespējams vienādojumā Y=a/(a-b) ar mainīgajiem a="<<a<<" b="<<b<<". Ievadiet vēlreiz a\n";
         cout<<"a: ";
         cin>>a;
-        cout<<"b: ";
-        cin>>b;
     }
 
     Y = a/(a-b)+1/b;
