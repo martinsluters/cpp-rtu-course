@@ -9,7 +9,7 @@ using namespace std;
 // Y=sqrt(a-b);
 void process_questions() {
     float a, b;
-    cout << "Ievadiet jebkurus divus skaitli no kuru starpības aprēķināt kvadrātskani: " << endl;
+    cout << "Ievadiet jebkurus divus skaitļus no kuru starpības aprēķināt kvadrātskani: " << endl;
     cout << "a: ";
     cin >> a;
     cout << "b: ";
