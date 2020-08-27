@@ -24,7 +24,7 @@ void process_questions() {
     cin >> b;
 
     while ( 7 == b ) {
-        cout << "Dalīt ar nulli nav iespējams vienādojumā X=(b-7), kur b = " << b << ", ievadiet b vēlreiz: " << endl;
+        cout << "Dalīt ar nulli nav iespējams vienādojumā Y = 3* sqrt(5-a)/(b-7), kur b = " << b << ", ievadiet b vēlreiz: " << endl;
         cout << "b: ";
         cin >> b;
     }
