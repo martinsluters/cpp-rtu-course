@@ -8,7 +8,7 @@ using namespace std;
 
 // Y=sqrt(a-b);
 void process_questions() {
-    float a, b;
+    float a, b, raw_result;
     cout << "Ievadiet jebkurus divus skaitļus no kuru starpības aprēķināt kvadrātskani: " << endl;
     cout << "a: ";
     cin >> a;
@@ -16,9 +16,13 @@ void process_questions() {
     cin >> b;
     while ( 0 > a - b ) {
         cout << "Kavdrātsakne no negatīva skaitļa nev iespējams aprēķināt vienādojumā Y=sqrt(a-b), kur a = " << a << " un b = " << b << ", ievadiet b vēlreiz: " << endl;
+        cout << "b: ";
         cin >> b;
     }
-    cout << "Kvadrātsakne no " << a - b << " ir " << sqrt( a - b ) << endl << endl;
+    raw_result = sqrt( a - b );
+    cout << "Kvadrātsakne no " << a - b << " ir " << raw_result << endl << endl;
+    cout << "Noapaļota kvadrātsakne līdz veselam skaitlim no " << a - b << " ir " << round( raw_result ) << endl << endl;
+    cout << "Noapaļota kvadrātsakne līdz vienai decimāldaļai no " << a - b << " ir " << round( raw_result * 10 ) / 10 << endl << endl;
 }
 
 int main() {
