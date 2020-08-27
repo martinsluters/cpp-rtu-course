@@ -10,8 +10,8 @@ void process_sqrt() {
     float x;
     cout << "Ievadiet jebkuru skaitli no kura aprēķināt kvadrātskani: ";
     cin >> x;
-    while ( 0 == x ) {
-        cout << "Kavdrātsakne no 0 nev iespējams aprēķināt, ievadiet skaitli vēlreiz: " << endl;
+    while ( 0 > x ) {
+        cout << "Kavdrātsakne no negatīva skaitļa nev iespējams aprēķināt, ievadiet skaitli vēlreiz: " << endl;
         cin >> x;
     }
     cout << "Kvadrātsakne no " << x << " ir " << sqrt( x ) << endl << endl;
