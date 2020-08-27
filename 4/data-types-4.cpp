@@ -12,7 +12,7 @@ void process_questions() {
     cout << "Pārbaudīsim vai ievadītais skaitlis ir vesels skaitlis. Ievadiet jebkuru skaitli: " << endl;
     cout << "a: ";
     cin >> a;
-    answer = floor( a ) == ceil( a ) ? "Šis ir vesels skaitlis" : "Šis nav vesels skaitlis" );
+    answer = floor( a ) == ceil( a ) ? "Šis ir vesels skaitlis" : "Šis nav vesels skaitlis";
     cout << answer;
 }
 
