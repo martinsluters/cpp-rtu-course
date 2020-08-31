@@ -40,14 +40,12 @@ void process_questions() {
 		cout << "Ievadiet " << i+1 << ". produkta cenu par vienu vienību: ";
 		cin >> price_of_product[i];
 
-		cout << "Ievadiet " << i+1 << ". produkta skaitu: ";
+		cout << "Ievadiet " << i+1 << ". produkta daudzumu: ";
 		cin >> count_of_product_arr[i];
 
-		i++;
-	}
+		total_price_with_pvn += round_price( price_of_product[i] * count_of_product_arr[i]);
 
-	for ( int n = 0; n < no_products; n++  ){
-		total_price_with_pvn += round_price( price_of_product[n] * count_of_product_arr[n]);
+		i++;
 	}
 
 	cout << "\n\n\n" << "Pirkuma kopējā cena ar PVN: €" << total_price_with_pvn << "\n";
