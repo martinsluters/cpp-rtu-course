@@ -11,8 +11,8 @@ using namespace std;
 
 // Wrap negative number with brackets for text output
 string wrap_brackets_negative_number( float number ) {
-    stringstream ss;
-    ss << number;
+	stringstream ss;
+	ss << number;
 	return 0 > number ? "(" + ss.str() + ")" : ss.str();
 }
 
@@ -28,20 +28,20 @@ int main() {
 	cout << "   2) b-c nedrīkst būt vienāds ar -5 (negatīvu pieci)\n\n";
 
 	cout << "b: ";
-    cin >> b;
+	cin >> b;
 
-    do {
-	    cout << "a (ne mazāks kā " << b << "): ";
-	    cin >> a;
+	do {
+		cout << "a (ne mazāks kā " << b << "): ";
+		cin >> a;
 	} while ( a < b );
 
-    do {
-	    cout << "c (skaitlis nedrīkst būt vienāds ar " << b+5 << "): ";
-	    cin >> c;
+	do {
+		cout << "c (skaitlis nedrīkst būt vienāds ar " << b+5 << "): ";
+		cin >> c;
 	} while ( c == b+5 );
 
-    y = 3 * sqrt( a-b ) / pow( 5-c+b, 2 );
+	y = 3 * sqrt( a-b ) / pow( 5-c+b, 2 );
 
-    cout << "\n\n     √(a-b)          √(" << a << "-"<< wrap_brackets_negative_number( b ) <<")\n" << "3 * ————————  =  3 * ————————    =  " << y << "\n" << "    (5-c+b)²         (5-"<< wrap_brackets_negative_number( c ) << "+"<< wrap_brackets_negative_number( b ) <<")²\n\n\n";
-    return 1;
+	cout << "\n\n     √(a-b)          √(" << a << "-"<< wrap_brackets_negative_number( b ) <<")\n" << "3 * ————————  =  3 * ————————    =  " << y << "\n" << "    (5-c+b)²         (5-"<< wrap_brackets_negative_number( c ) << "+"<< wrap_brackets_negative_number( b ) <<")²\n\n\n";
+	return 1;
 }
