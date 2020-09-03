@@ -8,7 +8,7 @@ int main() {
 	cin >> d;
 	atl = d % s;
 
-	for ( i=0; ; i+=400 ) {
+	for ( i=0; ; i+=s ) {
 
 	    if( i < d && i+atl < d ) {
 	        cout << i << "\n";
