@@ -24,13 +24,16 @@ int main() {
 	    }
 
 	    if( i < d && i+atl < d ) { // ja i = 1200 un d = 1800 un atl = 200
-	        cout << i << " Aplis noskriets procentuāli: " << get_percent_single_lap_completed( s, s ) << "% Pilna distance noskrieta procentuāli: " << get_percent_total_distance_completed( d, i ) << "%\n";
+	        cout << "Metri noskrieti: " << i << "m Aplis noskriets procentuāli: " << get_percent_single_lap_completed( s, s ) << "% Pilna distance noskrieta procentuāli: " << get_percent_total_distance_completed( d, i ) << "%\n";
 	    } else if ( i < d && i+atl == d ) { // ja i = 1600 un d = 1800 un atl = 200
-	        cout << i << " Aplis noskriets procentuāli: " << get_percent_single_lap_completed( s, s ) << "% Pilna distance noskrieta procentuāli: " << get_percent_total_distance_completed( d, i ) << "%\n";
-	        cout << i+atl << " Aplis noskriets procentuāli: " << get_percent_single_lap_completed( s, atl ) << "% Pilna distance noskrieta procentuāli: " << get_percent_total_distance_completed( d, i+atl ) << "%\n";
+	        cout << "Metri noskrieti: " << i << "m Aplis noskriets procentuāli: " << get_percent_single_lap_completed( s, s ) << "% Pilna distance noskrieta procentuāli: " << get_percent_total_distance_completed( d, i ) << "%\n";
+	        cout << "Metri noskrieti: " << i+atl << "m Aplis noskriets procentuāli: " << get_percent_single_lap_completed( s, atl ) << "% Pilna distance noskrieta procentuāli: " << get_percent_total_distance_completed( d, i+atl ) << "%\n";
+	        break;
+	    } else if ( i > d ) { // ja i = 400 un d = 100
+	        cout << "Metri noskrieti: " << atl << "m Aplis noskriets procentuāli: " << get_percent_single_lap_completed( s, atl ) << "% Pilna distance noskrieta procentuāli: " << get_percent_total_distance_completed( d, atl ) << "%\n";
 	        break;
 	    } else if ( i == d ) { // ja i = 2000 un d = 2000 un atl = 0
-	        cout << i << " Aplis noskriets procentuāli: " << get_percent_single_lap_completed( s, s ) << "% Pilna distance noskrieta procentuāli: " << get_percent_total_distance_completed( d, i+atl ) << "%\n";
+	        cout << "Metri noskrieti: " << i << "m Aplis noskriets procentuāli: " << get_percent_single_lap_completed( s, s ) << "% Pilna distance noskrieta procentuāli: " << get_percent_total_distance_completed( d, i+atl ) << "%\n";
 	        break;
 	    }
 
