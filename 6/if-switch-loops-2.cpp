@@ -35,8 +35,8 @@ int main() {
 
     if ( dienas_stradaja ) {
 
-      $day_string_v1 = dienas_stradaja > 1 ? "dienas!" : "dienu!";
-      cout << "Strādāja " << dienas_stradaja << " " << $day_string_v1 << "\n";
+      string day_string_v1 = dienas_stradaja > 1 ? "dienas!" : "dienu!";
+      cout << "Strādāja " << dienas_stradaja << " " << day_string_v1 << "\n";
 
       if ( dienas_stradaja > 1 ) {
         cout << "Vidēji darba dienā nopelnīja: €" << round( (visas_darba_dienas_nopelnits / dienas_stradaja) * 100 ) / 100;
