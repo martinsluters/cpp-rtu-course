@@ -8,7 +8,7 @@ int main() {
     cout << "Ievadiet velosipeda cenu: ";
     cin >> cena_velosipedam;
 
-    if ( ! cena_velosipedam ) {
+    if ( 0 >= cena_velosipedam ) {
       cout << "Tev paveicās. Riteni uzdāvināja veikalnieks!";
       return 0;
     }
