@@ -7,6 +7,7 @@ int main() {
 
     cout << "Ievadiet velosipeda cenu: ";
     cin >> cena_velosipedam;
+    cena_velosipedam = abs( cena_velosipedam );
 
     if ( ! cena_velosipedam ) {
       cout << "Tev paveicās. Riteni uzdāvināja veikalnieks!";
