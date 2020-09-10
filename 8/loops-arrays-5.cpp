@@ -1,5 +1,5 @@
 /*
-Bubble sort 2D array's each row
+* Bubble sort 2D array's each row, even rows are sorted ascending, odd rows are descending
 */
 
 #include <iostream>
@@ -9,7 +9,7 @@ int main() {
 
 	srand( time( NULL ) );
 
-	int arr_len_r = 3, arr_len_c = 5, array[ arr_len_r ][ arr_len_c ], i, j;
+	int arr_len_r = 6, arr_len_c = 5, array[ arr_len_r ][ arr_len_c ], i, j;
 
 	for ( i = 0; i < arr_len_r; i++ ) {
 		for ( j = 0; j < arr_len_c; j++ ) {
@@ -20,13 +20,12 @@ int main() {
 	}
 
 	for ( int i = 0; i < arr_len_r; i++ ) {
-
 		for ( int N = arr_len_c-1; N > 0; N-- ) {
 			for ( j = 0; j < N; j++ ) {
 
 				int pal = array[i][j];
 
-				if ( i % 2) { // if odd row number lets sort ASC ascending
+				if ( i % 2) { // if even row number lets sort ASC ascending
 					if ( array[i][j] > array[i][j + 1] ) {
 						array[i][j] = array[i][j + 1 ];
 						array[i][j + 1] = pal;
@@ -37,10 +36,8 @@ int main() {
 						array[i][j + 1] = pal;
 					}
 				}
-
 			}
 		}
-
 	}
 
 	cout << "\n\n";
