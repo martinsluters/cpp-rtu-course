@@ -30,7 +30,7 @@ Bubble sort example
 2, 3, 1, 4, 5   N 2 i 0
 2, 1, 3, 4, 5   N 2 i 1
 
-1, 2, 3, 4, 5   N 2 i 1
+1, 2, 3, 4, 5   N 2 i 0
 */
 
 #include <iostream>
