@@ -1,3 +1,7 @@
+/**
+ * cikli- pelna naudu velosipēdam (do....while cikls)
+ */
+
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -7,8 +11,9 @@ int main() {
 
     cout << "Ievadiet velosipeda cenu: ";
     cin >> cena_velosipedam;
+    cena_velosipedam = abs( cena_velosipedam );
 
-    if ( 0 >= cena_velosipedam ) {
+    if ( ! cena_velosipedam ) {
       cout << "Tev paveicās. Riteni uzdāvināja veikalnieks!";
       return 0;
     }
