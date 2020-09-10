@@ -23,7 +23,7 @@ int main() {
 	number = abs( number );
 
 	for ( int i = 0; i < number; i++ ) {
-		cout << i << ". " << name << "\n";
+		cout << i + 1 << ". " << name << "\n";
 	}
 
 	return 0;
