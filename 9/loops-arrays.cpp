@@ -37,3 +37,4 @@ int main() {
 	cout << "Minimālo vērtību skaits: " << count_min_values;
 
 	return 0;
+}
