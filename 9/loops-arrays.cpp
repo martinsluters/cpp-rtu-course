@@ -25,16 +25,11 @@ int main() {
 
 	curr_min_val = array[arr_len-1];
 
-	for ( i = arr_len-2; i >= 0; i-- ) {
-		if ( curr_min_val == array[i] ) {
+	for ( i = 0; i < arr_len; i++ ) {
+	    cout << array[i] << "\t";
+		if ( curr_min_val == array[i] && i != arr_len-1 ) {
 			count_min_values++;
 		}
-	}
-
-	cout << "\n\n";
-
-	for ( i = 0; i < arr_len; i++ ) {
-		cout << array[i] << "\t";
 	}
 
 	cout << "\n\n";
@@ -42,4 +37,3 @@ int main() {
 	cout << "Minimālo vērtību skaits: " << count_min_values;
 
 	return 0;
-}
