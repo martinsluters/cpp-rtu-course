@@ -9,8 +9,6 @@ using namespace std;
 
 int main() {
 
-	srand( time( NULL ) );
-
 	int arr_len = 10, array[ arr_len ] = {12, 122, -121, 121, 146, 9, 0, 24, -121, 762}, i, N, curr_min_val, count_min_values = 0;
 
 	for ( N = arr_len-1; N > 0; N-- ) {
