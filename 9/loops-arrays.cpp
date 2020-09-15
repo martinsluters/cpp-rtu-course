@@ -11,7 +11,7 @@ int main() {
 
 	srand( time( NULL ) );
 
-	int arr_len = 10, array[ arr_len ] = {12, 122, -121, 121, 146, 9, 0, 24, -121, 762}, i, N, curr_min_val, count_min_values = 1;
+	int arr_len = 10, array[ arr_len ] = {12, 122, -121, 121, 146, 9, 0, 24, -121, 762}, i, N, curr_min_val, count_min_values = 0;
 
 	for ( N = arr_len-1; N > 0; N-- ) {
 		for ( i = 0; i < N; i++ ) {
@@ -27,7 +27,7 @@ int main() {
 
 	for ( i = 0; i < arr_len; i++ ) {
 	    cout << array[i] << "\t";
-		if ( curr_min_val == array[i] && i != arr_len-1 ) {
+		if ( curr_min_val == array[i] ) {
 			count_min_values++;
 		}
 	}
