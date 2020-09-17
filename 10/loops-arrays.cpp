@@ -25,6 +25,8 @@ int main() {
 	    cout << array[i] << "\t";
 	}
 
+    cout << "\n";
+
 	cout << "Negatīvo skaitļu skaits masīvā: " << lt_zerro_count;
 
 	cout << "\n\n";
