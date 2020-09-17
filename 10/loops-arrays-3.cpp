@@ -11,7 +11,7 @@ int main() {
 
 	srand( time( NULL ) );
 
-	int arr_len = 10, array[ arr_len ], new_new_array[11] = {0,0,0,0,0,0,0,0,0,0,0}, zerro_count = 0, gt_zerro_count = 0, lt_zerro_count = 0;
+	int arr_len = 10, array[ arr_len ], new_new_array[11] = {0,0,0,0,0,0,0,0,0,0,0};
 
 	for ( int i = 0; i < arr_len; i++ ) {
 	    array[i] = rand() %  11;
