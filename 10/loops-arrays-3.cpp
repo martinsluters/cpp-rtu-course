@@ -1,9 +1,7 @@
 /**
  * [LV]
  *
- * Masīvu aizpildīt ar gadījuma skaitļiem no -10 līdz 10
- * un izveidot jaunu masīvu ar vērtībām -1, ja negatīvs skaitlis, 0,
- * ja nulle un +1, ja pozitīvs skaitlis. Noteikt skaitu, cik negatīvu, cik pozitīvu un cik nulles.
+ * Masīvu aizpildīt ar atzīmēm un saskaitīt cik kādas atzīmes ir
  */
 
 #include <iostream>
