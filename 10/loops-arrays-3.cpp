@@ -22,7 +22,7 @@ int main() {
 	cout << "\n\n";
 
 	for ( int i = 0; i < 11; i++ ) {
-		if ( new_new_array[i] ) {
+		if ( new_array[i] ) {
 			cout << "Atzīme " << i << " kopā ir " << new_array[i] << " reizes\n";
 		}
 	}
