@@ -2,7 +2,6 @@
  * 1 Masīvu aizpildīt ar atzīmēm un aprēķināt vidējo vērtību
 */
 
-
 #include <iostream>
 using namespace std;
 
@@ -19,7 +18,7 @@ int main()
 	for ( masivanumurs = 0; masivanumurs < arr_len; masivanumurs++ ) {
 		masivasumma = masivasumma + masivs[masivanumurs];
 	}
-	videjaatzime = masivasumma / 8.00;
+	videjaatzime = masivasumma / ( arr_len * 0.1 );
 	cout << "Vidējā atzīme ir " << videjaatzime;
 	return 0;
 }
