@@ -11,11 +11,11 @@ int main() {
 
 	srand( time( NULL ) );
 
-	int arr_len = 10, array[ arr_len ], new_new_array[11] = {0,0,0,0,0,0,0,0,0,0,0};
+	int arr_len = 10, array[ arr_len ], new_array[11] = {0,0,0,0,0,0,0,0,0,0,0};
 
 	for ( int i = 0; i < arr_len; i++ ) {
 	    array[i] = rand() %  11;
-	    new_new_array[ array[i] ]++;
+	    new_array[ array[i] ]++;
 	    cout << array[i] << "\t";
 	}
 
@@ -23,7 +23,7 @@ int main() {
 
 	for ( int i = 0; i < 11; i++ ) {
 		if ( new_new_array[i] ) {
-			cout << "Atzīme " << i << " kopā ir " << new_new_array[i] << " reizes\n";
+			cout << "Atzīme " << i << " kopā ir " << new_array[i] << " reizes\n";
 		}
 	}
 
