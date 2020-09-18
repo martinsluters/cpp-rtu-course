@@ -11,19 +11,20 @@ int main() {
 
 	srand( time( NULL ) );
 
-	int arr_len = 10, array[ arr_len ], new_array[11] = {0,0,0,0,0,0,0,0,0,0,0};
+	int arr_len = 10, array[ arr_len ], grade_count_array[11] = {0,0,0,0,0,0,0,0,0,0,0}; // 11 jo atzīme var būt arī 0
 
 	for ( int i = 0; i < arr_len; i++ ) {
 	    array[i] = rand() %  11;
-	    new_array[ array[i] ]++;
+	    grade_count_array[ array[i] ]++;
 	    cout << array[i] << "\t";
 	}
 
 	cout << "\n\n";
 
 	for ( int i = 0; i < 11; i++ ) {
-		if ( new_array[i] ) {
-			cout << "Atzīme " << i << " kopā ir " << new_array[i] << " reizes\n";
+		if ( grade_count_array[i] ) {
+			string ending = grade_count_array[i] == 1 ? " reizi" : " reizes";
+			cout << "Atzīme " << i << " ir atrodama " << grade_count_array[i] << ending << ".\n";
 		}
 	}
 

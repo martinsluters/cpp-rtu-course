@@ -13,19 +13,19 @@ int main() {
 
 	srand( time( NULL ) );
 
-	int arr_len = 10, array[ arr_len ], new_array[ arr_len ], zerro_count = 0, gt_zerro_count = 0, lt_zerro_count = 0;
+	int arr_len = 10, array[ arr_len ], flag_array[ arr_len ], zerro_count = 0, gt_zerro_count = 0, lt_zerro_count = 0;
 
 	for ( int i = 0; i < arr_len; i++ ) {
 	    array[i] = rand() %  21 - 10;
 	    if ( array[i] > 0 ) {
 	    	gt_zerro_count++;
-	    	new_array[i] = 1;
+	    	flag_array[i] = 1;
 	    } else if ( array[i] < 0 ) {
 	    	lt_zerro_count++;
-	    	new_array[i] = -1;
+	    	flag_array[i] = -1;
 	    } else {
 	    	zerro_count++;
-	    	new_array[i] = 0;
+	    	flag_array[i] = 0;
 	    }
 
 	    cout << array[i] << "\t";
@@ -34,7 +34,7 @@ int main() {
 	cout << "\n\n";
 
 	for ( int i = 0; i < arr_len; i++ ) {
-		cout << new_array[i] << "\t";
+		cout << flag_array[i] << "\t";
 	}
 
 	cout << "\n\n";
