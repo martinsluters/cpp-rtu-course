@@ -19,7 +19,7 @@ int main() {
 		cout << "\n";
 	}
 
-	cout << "\n\n\n";
+	cout << "\n\n";
 
 	for ( i = 0; i < arr_len; i++ ) {
 		for( N = arr_len-1; N > 0; N-- ) {
@@ -41,8 +41,7 @@ int main() {
 		cout << "\n";
 	}
 
-	cout << "\n\n\n";
-
+	cout << "\n\n";
 
 	for ( j = 0; j < arr_len; j++ ) {
 		for( N = arr_len-1; N > 0; N-- ) {
@@ -63,8 +62,6 @@ int main() {
 		}
 		cout << "\n";
 	}
-
-	cout << "\n\n\n";
 
 	return 0;
 }
