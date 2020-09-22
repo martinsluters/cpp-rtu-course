@@ -21,7 +21,6 @@ int main() {
 
 	cout << "\n\n\n";
 
-
 	for ( j = 0; j < arr_len; j++ ) {
 		for( N = arr_len-1; N > 0; N-- ) {
 			for ( i = 0; i < N; i++ ) {
@@ -34,7 +33,6 @@ int main() {
 		}
 	}
 
-
 	for ( i = 0; i < arr_len; i++ ) {
 		for ( j = 0; j < arr_len; j++ ) {
 			cout << array[i][j] << "\t";
@@ -42,7 +40,7 @@ int main() {
 		cout << "\n";
 	}
 
-	cout << "\n\n";
+	cout << "\n\n\n";
 
 	for ( j = 0; j < arr_len; j++ ) {
 	    total_sum_col = 0;
