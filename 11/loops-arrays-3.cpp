@@ -33,6 +33,7 @@ int main() {
 		}
 	}
 
+	cout << "MASĪVS SAKĀRTOTS DILSTOŠĀ SECĪBĀ PA KOLONĀM" << "\n\n";
 	for ( i = 0; i < arr_len; i++ ) {
 		for ( j = 0; j < arr_len; j++ ) {
 			cout << array[i][j] << "\t";

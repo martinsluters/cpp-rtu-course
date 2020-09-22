@@ -33,6 +33,7 @@ int main() {
 		}
 	}
 
+	cout << "MASĪVS SAKĀRTOTS AUGOŠĀ SECĪBĀ PA RINDĀM" << "\n\n";
 	for ( i = 0; i < arr_len; i++ ) {
 	    total_sum_row = 0;
 		for ( j = 0; j < arr_len; j++ ) {

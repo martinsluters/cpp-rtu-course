@@ -11,7 +11,7 @@ using namespace std;
 
 int main() {
 	srand( time( NULL ) );
-	int arr_len = 5, array[ arr_len ][ arr_len ], new_array[ arr_len ][ arr_len ], i, j, pal_arr[ arr_len ];
+	int arr_len = 5, array[ arr_len ][ arr_len ], new_array[ arr_len ][ arr_len ], i, j;
 
     for ( i = 0; i < arr_len; i++ ) {
 		for ( j = 0; j < arr_len; j++ ) {
@@ -24,6 +24,7 @@ int main() {
 
 	cout << "\n\n\n";
 
+	cout << "TRANSPORĒTĀ MATRICA" << "\n\n";
 	for ( i = 0; i < arr_len; i++ ) {
 		for ( j = 0; j < arr_len; j++ ) {
 			cout << new_array[i][j] << "  ";
