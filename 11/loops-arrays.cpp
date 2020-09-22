@@ -11,8 +11,8 @@ int main() {
 	srand( time( NULL ) );
 	int total_sum = 0, arr_len = 10, array[ arr_len ][ arr_len ], i, j;
 
-	for ( i = 0; i < 10; i++ ) {
-		for ( j = 0; j < 10; j++ ) {
+	for ( i = 0; i < arr_len; i++ ) {
+		for ( j = 0; j < arr_len; j++ ) {
 			array[i][j] = rand() % 11 - 5;
 			cout << array[i][j] << "\t";
 			total_sum += array[i][j];
