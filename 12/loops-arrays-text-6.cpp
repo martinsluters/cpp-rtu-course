@@ -32,10 +32,10 @@ int main() {
 	cout << "\n\n";
 
 	// Main bubble sort
-    for ( int N = arr_len*arr_len-1; N > 0; N-- ) {
+	for ( int N = arr_len*arr_len-1; N > 0; N-- ) {
 		for ( i = 0; i < N; i++ ) {
-	        current_i = i/arr_len;
-	        current_j = i%arr_len;
+			current_i = i/arr_len;
+			current_j = i%arr_len;
 
 			if ( current_j + 1 < arr_len ) {
 				next_j = current_j+1;

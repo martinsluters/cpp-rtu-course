@@ -17,25 +17,25 @@ using namespace std;
 #define CURSOR_LEFT "\x1B[H"
 
 int main() {
-    int j, i;
-    int positions = 4;
-    int colour_count = 3;
-    int positions_settings[positions][colour_count] = { {1, 0, 0}, {1, 1, 0}, {0, 0, 1}, {0, 1, 0} };
-    string text[colour_count] = { "Sarkans", "Dzeltens", "Zaļš" };
-    string colours[colour_count] = { RED, YELLOW, GREEN };
-    int sleep_time[positions] = { 4, 1, 4, 1 };
+	int j, i;
+	int positions = 4;
+	int colour_count = 3;
+	int positions_settings[positions][colour_count] = { {1, 0, 0}, {1, 1, 0}, {0, 0, 1}, {0, 1, 0} };
+	string text[colour_count] = { "Sarkans", "Dzeltens", "Zaļš" };
+	string colours[colour_count] = { RED, YELLOW, GREEN };
+	int sleep_time[positions] = { 4, 1, 4, 1 };
 
-    for( i = 0; i < positions; i++ ) {
-        cout << CLEAR_SCREEN << CURSOR_LEFT;
-        for( j = 0; j < colour_count; j++ ) {
-            if ( 0 != positions_settings[i][j] ) {
-                cout << colours[j] << text[j] << "\n" ;
-            }
-        }
+	for( i = 0; i < positions; i++ ) {
+		cout << CLEAR_SCREEN << CURSOR_LEFT;
+		for( j = 0; j < colour_count; j++ ) {
+			if ( 0 != positions_settings[i][j] ) {
+				cout << colours[j] << text[j] << "\n" ;
+			}
+		}
 
-        cout.flush(); // Flush buffer
-        sleep(sleep_time[i]);
+		cout.flush(); // Flush buffer
+		sleep(sleep_time[i]);
 
-        if ( i+1 == positions ) i = -1;
-    }
+		if ( i+1 == positions ) i = -1;
+	}
 }
