@@ -14,7 +14,7 @@ using namespace std;
 #define YELLOW  "\033[33m"
 #define GREEN   "\033[32m"
 #define CLEAR_SCREEN "\x1B[2J"
-#define COURSOR_LEFT "\x1B[H"
+#define CURSOR_LEFT "\x1B[H"
 
 int main() {
     int j, i;
@@ -26,7 +26,7 @@ int main() {
     int sleep_time[positions] = { 4, 1, 4, 1 };
 
     for( i = 0; i < positions; i++ ) {
-        cout << CLEAR_SCREEN << COURSOR_LEFT;
+        cout << CLEAR_SCREEN << CURSOR_LEFT;
         for( j = 0; j < colour_count; j++ ) {
             if ( 0 != positions_settings[i][j] ) {
                 cout << colours[j] << text[j] << "\n" ;
