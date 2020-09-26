@@ -1,5 +1,5 @@
 /**
- * [LV]
+ * [EN]
  * Traffic lights
  *
  * WARNING: Infinite loop with sleep
