@@ -1,7 +1,7 @@
 /**
  * [LV]
  * Izveidot divdimensija masīvu, kas aizpildīti ar gadījuma skaitļiem.
- * Izveidot jaunu masīvu (transporēto), kas ir apgriezta pirmajam
+ * Izveidot jaunu masīvu (transponēto), kas ir apgriezta pirmajam
  * (rindas ar kolonām apmainīta vietām). (Par transponēto matricu sauc matricu AT,
  * kuru iegūst no dotās matricas, rindas elementus mainot vietām ar atbilstošās kolonnas elementiem.)
  */

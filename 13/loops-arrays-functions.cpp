@@ -38,4 +38,6 @@ int main() {
 
 		if ( i+1 == positions ) i = -1;
 	}
+
+	return 0;
 }
