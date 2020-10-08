@@ -114,7 +114,7 @@ bool validate_move( const int& next_viking_coord_x, const int& next_viking_coord
 /**
  * Depending on if a valid move, change the viking coordinates.
  * @param  move int constant passed by reference containing pressed key numeric value
- * @return bool true if global viking coordinates ver changed (moved), false if not
+ * @return bool true if global viking coordinates are changed (moved), false if not
  * @since 0.1
  */
 bool move_viking ( const int& move ) {
